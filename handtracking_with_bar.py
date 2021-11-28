@@ -33,8 +33,7 @@ while True:
         # Hand Range 15 145
         volBar = np.interp(length,[15,143],[400,150]) # barın uzunluğuna oaranlattık
         volPer = np.interp(length,[15,143],[0,100]) # yüzdeye oranlattık
-        # volume.SetMasterVolumeLevel(vol, None)# aralığa göre ses açıp kapatıyoz
-        # print(int(length),vol)
+       
         if length<15:
             cv2.circle(img,(cx,cy),10,(0,255,0),cv2.FILLED)
 
